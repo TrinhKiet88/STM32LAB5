@@ -1,0 +1,4 @@
+parser.c:10:6:reset	4	static
+parser.c:14:6:add	16	static
+parser.c:20:6:final	4	static
+parser.c:25:6:parser_fsm	16	static
