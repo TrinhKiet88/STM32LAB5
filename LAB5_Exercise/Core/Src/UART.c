@@ -26,7 +26,7 @@ void HandleReset(ADC_HandleTypeDef	hadc1, UART_HandleTypeDef huart2){
 }
 
 void HandleADC(UART_HandleTypeDef huart2){
-	HAL_UART_Transmit(&huart2, (uint8_t*)str,sprintf(str,"!ADC=%ld\r\n", ADCvalue), 1000);
+	HAL_UART_Transmit(&huart2, (uint8_t*)str,sprintf(str,"!ADC=%ld#\r\n", ADCvalue), 1000);
 	Ustatus = OK;
 }
 
