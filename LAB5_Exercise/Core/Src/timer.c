@@ -29,9 +29,10 @@ void timerRun(){
 	for (int i = 0; i < NUM_OF_TIMERS; i++){
 		if (timer_counter[i] > 0){
 			timer_counter[i]--;
-			if (timer_counter[i] == 0){
+			if (timer_counter[i] <= 0){
 				timer_flag[i] = 1;
 			}
 		}
 	}
 }
+
